@@ -42,7 +42,7 @@ export default function ImageSrollbar({ data }) {
          <Carousel className="" autoplay loop autoplayDelay={5000}>
       {data.map((item) => (
         <div className='' key={item.id} itemId={item.id} overflow='scroll' p='1'>
-          <Image className='w-full h-[500px]' placeholder="blur" blurDataURL={item.url} src={item.url} width={1000} height={500} alt=''/>
+          <Image className='w-full h-[300px] lg:h-[500px] object-cover' placeholder="blur" blurDataURL={item.url} src={item.url} width={1000} height={500} alt=''/>
         </div>
       ))}
      
