@@ -23,7 +23,7 @@ const Navbar = () => {
     }
   }, [router.pathname])
   return (
-    <Flex className='absolute top-0 left-0 w-full z-[1000]' p='2'>
+    <Flex className='absolute top-5 left-0 w-full z-[1000] p-4'>
     <Box className={show && `text-3xl ${color} flex justify-center font-semibold`}>
       <Link href='/' paddingLeft='2'>WinRealtor</Link>
     </Box>
