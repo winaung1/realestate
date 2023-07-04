@@ -30,7 +30,7 @@ const Home = ({ propertiesForSale, propertiesForRent }) => (
     <Flex className='flex overflow-scroll hide-scroll-bar'>
       {propertiesForRent.map((property) => <Property property={property} key={property.id} />)}
     </Flex>
-    <div className='lg:flex justify-center'>
+    <div className='lg:flex justify-center pt-4'>
 
     <Banner
       purpose='RENT A HOME'
