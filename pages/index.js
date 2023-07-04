@@ -27,7 +27,7 @@ const Home = ({ propertiesForSale, propertiesForRent }) => (
     <h1 className='font-semibold text-xl text-gray-600 lg:text-2xl'>Get home recommedations</h1>
     <p className='text-gray-400 py-2 lg:text-2xl'>Browse around for your favorite place</p>
     </div>
-    <Flex className='flex overflow-scroll'>
+    <Flex className='flex overflow-scroll hide-scroll-bar'>
       {propertiesForRent.map((property) => <Property property={property} key={property.id} />)}
     </Flex>
     <div className='lg:flex justify-center'>
